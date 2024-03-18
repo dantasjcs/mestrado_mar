@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+} 
+body{
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 30%;
+    width: 30%;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgb(177, 177, 177);
+}
+img{
+    height: 150px;
+    border-radius: 15px;
+}
+.card_container{
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content:center;
+    
+}
+
+.card_content{
+    padding-left: 20px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+h4{
+    color: green;
+    display: none;
+}
+button{
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color:white;
+    border-radius:  5px;
+    font-weight: bold;
+}
+
+@media (width <= 1250px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+  }
